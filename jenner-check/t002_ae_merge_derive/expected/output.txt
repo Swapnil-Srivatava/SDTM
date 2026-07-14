@@ -1,0 +1,47 @@
+
+  Obs  STUDYID  DOMAIN     AETERM     AESTDTC     AEENDTC     AESEV      AEREL  AESER  SUBJID  SubjectID  EventDescription  StartDate_char  EndDate_char  Severity  RelationshipToDrug   ActionTaken  Serious   StartDate     EndDate     USUBJID     RFSTDTC
+-----  -------  ------  ---------  ----------  ----------  --------  ---------  -----  ------  ---------  ----------------  --------------  ------------  --------  ------------------  ------------  -------  ----------  ----------  ----------  ----------
+    1  ABC123   AE      Headache   2024-01-13              MODERATE  POSSIBLE   N      001             1  Headache          2024-01-13                    Moderate  Possible            None          No       2024-01-13           .  ABC123-001  2024-01-15
+    2  ABC123   AE      Nausea     2024-01-18  2024-01-20  MILD      UNRELATED  N      002             2  Nausea            18/01/2024      20/01/2024    Mild      Unrelated           None          No       2024-01-18  2024-01-20  ABC123-002  2024-01-17
+    3  ABC123   AE      Vomiting   2024-01-26  2024-01-26  SEVERE    PROBABLE   Y      003             3  Vomiting          2024-01-26      2024-01-26    Severe    Probable            Drug stopped  Yes      2024-01-26  2024-01-26  ABC123-003  2024-01-20
+    4  ABC123   AE      Dizziness  2024-01-15  2024-01-15  MILD      RELATED    N      004             4  Dizziness         2024-01-15      2024-01-15    Mild      Related             None          No       2024-01-15  2024-01-15  ABC123-004  2024-01-12
+    5  ABC123   AE      Headache   2025-01-15  2024-01-28  MILD      UNRELATED  N      005             5  Headache          2025-01-15      2024-01-28    Mild      Unrelated           Drug stopped  No       2025-01-15  2024-01-28  ABC123-005  2024-01-21
+
+AE_N
+----
+   5
+
+  Obs  SUBJID     RFSTDTC     AESTDTC  AESTDY     AEENDTC
+-----  ------  ----------  ----------  ------  ----------
+    1  001     2024-01-15  2024-01-13      -1
+    2  002     2024-01-17  2024-01-18       2  2024-01-20
+    3  003     2024-01-20  2024-01-26       7  2024-01-26
+    4  004     2024-01-12  2024-01-15       4  2024-01-15
+    5  005     2024-01-21  2025-01-15     361  2024-01-28
+
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: ae
+Observations:  5
+Variables:     10
+
+Variables (in creation order):
+
+  #  Variable  Type    Len  Format  Label
+---  --------  ----  -----  ------  -----
+  1  STUDYID   Char     20          
+  2  DOMAIN    Char      2          
+  3  USUBJID   Char     40          
+  4  AETERM    Char    200          
+  5  AESTDTC   Char     10          
+  6  AEENDTC   Char     10          
+  7  AESTDY     Num      8          
+  8  AESEV     Char      8          
+  9  AEREL     Char     12          
+ 10  AESER     Char      1          
+
+-------------------------------------------------------------------------------
+
+

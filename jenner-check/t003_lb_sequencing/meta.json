@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_lb_sequencing",
+  "source_file": "lb.sas",
+  "source_blob_sha": "396a77de8e198dc8f4c1bdbd7ba93a91b49f738f",
+  "source_commit": "bf0c75bf77ef4db86b64a8432a3d63896799ff9c",
+  "notes": "SDTM LB domain derivation. lb.sas reads raw_lb.csv and raw_dm.csv from local disk (and re-reads raw_lb into raw_lb_raw twice -- kept as the author wrote it); those reads are replaced by inline DATA steps building the same tables in the layouts lb.sas declares (ALT/AST values consistent with the study lab data; both Excel-serial and character dates present). Excel-serial-vs-character date handling, LBSTRESC/LBSTRESN standardisation, DM merge, LBDY derivation, and LBSEQ sequencing via BY/FIRST.+RETAIN unchanged. Fully self-contained (no external files)."
+}

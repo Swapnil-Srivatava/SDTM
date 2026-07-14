@@ -1,0 +1,39 @@
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: work.lb_v1
+Observations:  5
+Variables:     14
+
+Variables (in creation order):
+
+  #  Variable  Type    Len  Format  Label
+---  --------  ----  -----  ------  -----
+  1  STUDYID   Char     20          
+  2  DOMAIN    Char      2          
+  3  USUBJID   Char     40          
+  4  LBSEQ      Num      8          
+  5  LBTESTCD  Char      8          
+  6  LBTEST    Char     40          
+  7  LBORRES   Char     40          
+  8  LBORRESU  Char     20          
+  9  LBSTRESC  Char     40          
+ 10  LBSTRESN   Num      8          
+ 11  LBDTC     Char     10          
+ 12  LBDY       Num      8          
+ 13  VISIT     Char     40          
+ 14  VISITNUM   Num      8          
+
+-------------------------------------------------------------------------------
+
+
+  Obs  STUDYID  DOMAIN     USUBJID  LBSEQ  LBTESTCD                      LBTEST  LBORRES  LBORRESU  LBSTRESC  LBSTRESN       LBDTC  LBDY     VISIT  VISITNUM
+-----  -------  ------  ----------  -----  --------  --------------------------  -------  --------  --------  --------  ----------  ----  --------  --------
+    1  ABC123   LB      ABC123-001      1  ALT       Alanine Aminotransferase    35       U/L       35              35  2024-01-10    -4  Baseline         1
+    2  ABC123   LB      ABC123-001      2  ALT       Alanine Aminotransferase    78       U/L       78              78  2024-01-24    10  Week 2           2
+    3  ABC123   LB      ABC123-002      1  AST       Aspartate Aminotransferase  22       U/L       22              22  2024-01-12    -4  Baseline         1
+    4  ABC123   LB      ABC123-003      1  ALT       Alanine Aminotransferase    High               High             .  2024-01-29    10  Week 4           4
+    5  ABC123   LB      ABC123-005      1  AST       Aspartate Aminotransferase  Low      U/L       Low              .  2024-01-21     1  Week 3           3
+
+

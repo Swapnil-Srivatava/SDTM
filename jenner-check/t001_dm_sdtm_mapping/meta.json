@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_dm_sdtm_mapping",
+  "source_file": "dm.sas",
+  "source_blob_sha": "2a5e12470ddec28efb4d8ed4baaec3174073b89e",
+  "source_commit": "bf0c75bf77ef4db86b64a8432a3d63896799ff9c",
+  "notes": "SDTM DM domain derivation. RAW_DM (from PROC IMPORT of raw_dm.xlsx) rebuilt in autoexec via DATALINES with the actual spreadsheet rows and PROC IMPORT column names/types (Excel serial dates as numerics). DM mapping logic (STUDYID/DOMAIN/USUBJID/SEX/AGE/RFSTDTC/RFENDTC), PROC SORT, PROC PRINT, PROC EXPORT unchanged; export path relativized to dm.csv."
+}
