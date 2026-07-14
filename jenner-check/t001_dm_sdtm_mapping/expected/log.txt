@@ -1,0 +1,32 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260714T043649Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA raw_dm
+
+NOTE: Processing inline DATALINES (5 lines)
+
+NOTE: Read 5 rows from DATALINES.
+NOTE: Wrote raw_dm (5 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA dm
+
+
+NOTE: Read 5 rows from raw_dm.
+NOTE: Wrote dm (5 rows, 8 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=dm
+
+NOTE: Read 5 rows from dm.
+NOTE: Wrote dm (5 rows, 8 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC PRINT data=dm
+
+NOTE: PROC PRINT completed: 5 observations printed, 8 variables
+NOTE: PROC EXPORT data=dm outfile=dm.csv
+
+NOTE: Exported 5 rows to dm.csv.
+

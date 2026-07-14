@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_ae_merge_derive",
+  "source_file": "ae.sas",
+  "source_blob_sha": "5df77e9f586185deb9cd17118d314bc9433af444",
+  "source_commit": "bf0c75bf77ef4db86b64a8432a3d63896799ff9c",
+  "notes": "SDTM AE domain derivation. ae.sas reads raw_dm.csv and raw_ae.csv from local disk; those two reads are replaced by inline DATA steps building the same RAW_DM and RAW_AE_RAW tables from the study raw values (mixed date formats preserved: DD/MM/YYYY row, missing-end-date row). DM reference build, AE term/date/severity/relationship/serious mapping, two BY-merges, AESTDY study-day derivation, PROC SQL count, PROC PRINT and PROC CONTENTS unchanged; PROC EXPORT relativized to ae.csv. Fully self-contained (no external files)."
+}
